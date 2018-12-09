@@ -170,11 +170,10 @@ Figure 11. Loss comparison for different optimizer[3]
 
 I discovered that my model's loss on training data continued to decrease even its loss on evaluation data increased when using Adam. For navigation, I wrote a function to store the model weights for each epoch after they had been used to make predictions. This way I could visually determine if the model was overfitting and the results were being skewed. Below table lists the predicted captions at selected epoch for random chosen images.
 
-
-<p align="center">
-Table 1. Model-generated Caption for Selected Epochs
-</p>
 ![](image/caption_sample.png)
+<p align="center">
+Figure 12. Model-generated Caption for Selected Epochs
+</p>
 
 
 ## Model Evaluation
@@ -186,7 +185,7 @@ For example let's consider a scenario in which I want to compare the similarly b
 
 ![](image/bleu_calc.png)
 <p align="center">
-Figure 12. Flowchart for BLEU calculation
+Figure 13. Flowchart for BLEU calculation
 </p>
 
 Finally, 1-gram BLEU, 2-gram BLEU, 3-gram BLEU and 4-gram BLEU are calculated and its average is reported as BLEU. BLEU score calculation is implemented in nltk.util and the source code is available[5].
@@ -194,7 +193,7 @@ Finally, 1-gram BLEU, 2-gram BLEU, 3-gram BLEU and 4-gram BLEU are calculated an
 Below are some examples with BLEU score larger than 0.7:
 ![](image/good_caption.png)
 <p align="center">
-Figure 13. Examples for predicted caption with BLEU score larger than 0.7
+Figure 14. Examples for predicted caption with BLEU score larger than 0.7
 </p>
 
 
