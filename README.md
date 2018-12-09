@@ -30,7 +30,7 @@ Suppose you see these pictures -
 Figure 2. Flickr8k image samples
 </p>
 
-What is the first thing that comes to your mind?
+What are the first things that come to your mind?
 
 Here are a few sentences that people could come up with:
 - Left image: "beige puppy walks across the floor"
