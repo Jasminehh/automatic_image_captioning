@@ -2,9 +2,6 @@
 By Jasmine He December, 2018
 
 ![](image/deepLearning.png)
-<p align="right">
-Source: ZDNet
-</p>
 
 ## Introduction
 Google released the ‘Google’s Conceptual Captions’ dataset for image captioning as a new image-recognition challenge and an exercise in AI-driven education. Since pictures may convey a great deal of information, it is important that we create ways of generating conceptual captions from images automatically and accurately.
@@ -216,5 +213,7 @@ Yorktown Heights, NY 10598, USA.
 
 [5] Develop an image captioning deep learning model using Flickr 8K data
 (https://fairyonice.github.io/Develop_an_image_captioning_deep_learning_model_using_Flickr_8K_data.html)
+
+[6] Profolio image source: ZDNet
 
 Copyright @ Jasmine He
