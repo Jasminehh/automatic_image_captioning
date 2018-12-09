@@ -1,5 +1,10 @@
-# Image Captioning with Deep Learning
+# Automatic Image Captioning with Deep Learning
 By Jasmine He December, 2018
+
+![](image/deepLearning.png)
+<p align="right">
+Source: ZDNet
+</p>
 
 ## Introduction
 Google released the ‘Google’s Conceptual Captions’ dataset for image captioning as a new image-recognition challenge and an exercise in AI-driven education. Since pictures may convey a great deal of information, it is important that we create ways of generating conceptual captions from images automatically and accurately.
@@ -165,7 +170,7 @@ Figure 11 shows the loss trends for both the training data and the testing data 
 
 ![](image/loss.png)
 <p align="center">
-Figure 11. Loss comparison for different optimizer[3]
+Figure 11. Loss comparison for different optimizer
 </p>
 
 I discovered that my model's loss on training data continued to decrease even its loss on evaluation data increased when using Adam. For navigation, I wrote a function to store the model weights for each epoch after they had been used to make predictions. This way I could visually determine if the model was overfitting and the results were being skewed. Below table lists the predicted captions at selected epoch for random chosen images.
