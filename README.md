@@ -177,7 +177,7 @@ Figure 12. Model-generated Caption for Selected Epochs
 
 
 ## Model Evaluation
-### Bilingual evaluation understudy (BLEU)
+### Bilingual Evaluation Understudy (BLEU)
 For testing purposes I turned to the Bilingual evaluation understudy (BLUE) set of benchmarks. BLEU contained a metric for determining the similarity between a model-generated sentence and various other reference sentences. Being close to 1 means that the two are very similar, being close to 0 means they are very dissimilar[4].
 
 ### Basic Idea of BLEU
@@ -212,4 +212,4 @@ Yorktown Heights, NY 10598, USA.
 [5] Develop an image captioning deep learning model using Flickr 8K data
 (https://fairyonice.github.io/Develop_an_image_captioning_deep_learning_model_using_Flickr_8K_data.html)
 
-copyright @ Jasmine He
+Copyright @ Jasmine He
