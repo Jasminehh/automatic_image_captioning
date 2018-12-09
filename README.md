@@ -200,12 +200,16 @@ Figure 14. Examples for predicted caption with BLEU score larger than 0.7
 ## Reference
 [1] Cyrus Rashtchian, Peter Young, Micah Hodosh, and Julia Hockenmaier. Collecting Image Annotations Using Amazon's Mechanical Turk. In Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk.
 
-[2] [Recurrent Neural Networks Tutorial]:(http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+[2] Recurrent Neural Networks Tutorial
+(http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 
-[3] [How to Train Neural Netowrk Faster with Optimizers]:(https://towardsdatascience.com/how-to-train-neural-network-faster-with-optimizers-d297730b3713)
+[3] How to Train Neural Netowrk Faster with Optimizers
+(https://towardsdatascience.com/how-to-train-neural-network-faster-with-optimizers-d297730b3713)
 
 [4] Kishore Papineni, Salim Roukos, Todd Ward, Wei-Jing Zhu. (2012). BLEU: a Method for Automatic Evaluation of Machine Translation. IBM T. J. Watson Research Center
 Yorktown Heights, NY 10598, USA.
 
-[5] [Develop an image captioning deep learning model using Flickr 8K data]
-:(https://fairyonice.github.io/Develop_an_image_captioning_deep_learning_model_using_Flickr_8K_data.html)
+[5] Develop an image captioning deep learning model using Flickr 8K data
+(https://fairyonice.github.io/Develop_an_image_captioning_deep_learning_model_using_Flickr_8K_data.html)
+
+copyright @ Jasmine He
