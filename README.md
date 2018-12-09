@@ -126,9 +126,9 @@ In the above:
 
 
 ## How to train Neural Networks more quickly through the use of optimizer?
-Optimization refers to searching the space of possible parameters for parameters that minimize or maximize some function that we care about.
+Optimization refers to searching the space of possible parameters that minimize or maximize some function that we care about.
 
-Typically training a machine learning model involves "indirect" optimization, wherein we pick a metric such as like recall or accuracy to quantify how well our model solves the problem we're interest in. However, we are actually optimizing a cost function which measures the errors in our predictions and hoping that this also moves our chosen metric in the direction we want it to go.
+Typically training a machine learning model involves "indirect" optimization, wherein we pick a metric such as like recall or accuracy to quantify how well our model solves the problem we're interest in. However, we are actually optimizing a cost function which measures the errors in our predictions and hoping that this also moves our chosen metric in the direction we want it to go [3].
 
 ![](image/optimizer_comparison.gif)
 <p align="center">
@@ -148,12 +148,12 @@ Figure 10. Learning rate comparison [3]
 </p>
 
 ### Gradient Descent with Momentum
-Adding momentum to the above just means that even if we find a flat place in our gradient descent our algorithm will continue to move forward with the values from previous calculations. Ultimately this makes it less likely that we'll get stuck in a local minimum:
+Let's take rolling a ball downhill as an example. Adding momentum term (*V_dw* and *V_db*) to the descent is make the ball roll faster and faster. Beta is used to prevent the ball speeding up without limit. It is just a way to make the gradient descent happen faster by skipping over the steeper parts of the learning curve.
 
 ![](image/gd_momentum.png)
 
 ### Root Mean Squared Propagation (RMSProp)
-Yet another way of approaching gradient descent is to use Root Mean Squared Propagation, or 'RMSProp', which has come into frequent use in recent years. Better still, it can 'adapt' by performing adjustments to the learning rates of all the model's parameters.
+Another way of approaching gradient descent is to use Root Mean Squared Propagation, or 'RMSProp', which has come into frequent use in recent years. It uses adaptive learning rate to help point the correct direction towards the minimum.
 
 ![](image/rmsprop.png)
 
@@ -216,4 +216,4 @@ Yorktown Heights, NY 10598, USA.
 
 [6] Profolio image source: ZDNet
 
-Copyright @ Jasmine He
+Copyright © 2018 Jasmine He
