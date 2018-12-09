@@ -153,7 +153,7 @@ Let's take rolling a ball downhill as an example. Adding momentum term (*V_dw* a
 ![](image/gd_momentum.png)
 
 ### Root Mean Squared Propagation (RMSProp)
-Another way of approaching gradient descent is to use Root Mean Squared Propagation, or 'RMSProp', which has come into frequent use in recent years. It uses adaptive learning rate to help point the correct direction towards the minimum.
+Another way of approaching gradient descent is to use Root Mean Squared Propagation, or 'RMSProp', which has come into frequent use in recent years. It uses adaptive learning rate to help pointing the correct direction towards the minimum.
 
 ![](image/rmsprop.png)
 
