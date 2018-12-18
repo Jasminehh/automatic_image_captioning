@@ -89,9 +89,9 @@ For each image, 4096 features are created, reflecting the dimensions of the arra
 ### Do photo features make sense?
 I used k-means clustering on the VGG16 features to separate the images into 4 different clusters.
 
-![](image/pca_embedding_plot_new.png)
+![](image/pca_3d.gif)
 <p align="center">
-Figure 6. Embedding plot for a subset of 1000 VGG16 features
+Figure 6. 3D embedding plot for a subset of 1000 VGG16 features
 </p>
 
 I then plotted images from the purple and blue cluster. As you can see, images from the blue cluster tend to resemble each other and images from the purple cluster to resemble each other.
@@ -185,7 +185,7 @@ For testing purposes I turned to the Bilingual evaluation understudy (BLUE) set 
 ### Basic Idea of BLEU
 For example let's consider a scenario in which I want to compare the similarly between the hypothesis sentence and the reference sentences.
 
-![](image/bleu_calc.png)
+![](image/bleu.png)
 <p align="center">
 Figure 13. Flowchart for BLEU calculation
 </p>
@@ -198,6 +198,26 @@ Below are some examples with BLEU score larger than 0.7:
 Figure 14. Examples for predicted caption with BLEU score larger than 0.7
 </p>
 
+Below are some examples with BLEU score larger than 0.3, but less than 0.7:
+![](image/mid_caption.png)
+<p align="center">
+Figure 15. Examples for predicted caption with BLEU score larger than 0.3, but less than 0.7
+</p>
+
+## Conclusion
+This project focused on building a system to generate captions for images. I used a pre-trained image-model (VGG16) to generate a "thought-vector" of the image, and then I trained a Recurrent Neural Network to map this "thought-vector" to a sequence of integers representing words.
+
+I also explored various ways in which we can train Neural Networks more quickly through the use of optimizers. It turned out that the Adaptive Moment Estimation (Adam) optimizer outperformed other optimizers in this case.
+
+This model works reasonably well, although it is easy to find examples both in the training- and validation-sets where the captions are incorrect.
+
+It's crucial to bear in mind that this model doesn't have a semantic understanding of the content of the images. If it sees an image of a dog and correctly produces a caption stating that, it doesn't mean that the model has anything corresponding to the 'dog' concept.
+
+## Future Work
+- Incorporate larger dataset into the model.
+- Use another transfer-layer from the VGG-16 model, for example the flatten output of the last convolutional layer.
+- Improve the model to generate multiple sequences and find a way to select the best of these different sequences.
+- Explore another evaluation metrics to measure the quality of the generated captions.
 
 ## Reference
 [1] Cyrus Rashtchian, Peter Young, Micah Hodosh, and Julia Hockenmaier. Collecting Image Annotations Using Amazon's Mechanical Turk. In Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk.
